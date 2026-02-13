@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Valentine ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" src="music.mp3"></audio>
+
+<section class="screen active" id="screen1">
+<h1 class="type"></h1>
+<button onclick="nextScreen()">Open it 💌</button>
+</section>
+
+<section class="screen" id="screen2">
+<p class="type"></p>
+<button onclick="nextScreen()">Keep going ✨</button>
+</section>
+
+<section class="screen" id="screen3">
+<img id="slideshow" src="photo1.jpg">
+<button onclick="nextScreen()" id="photoBtn">One more thing…</button>
+</section>
+
+<section class="screen dark" id="screen4">
+<h1 class="type"></h1>
+<button onclick="nextScreen()">I'm ready 💗</button>
+</section>
+
+<section class="screen" id="screen5">
+<h1>Will you be my Valentine? ❤️</h1>
+
+<div class="buttons">
+<button onclick="yesClicked()">YES 😍</button>
+<button id="noBtn" onmouseover="moveNo()">NO 🙈</button>
+</div>
+
+<p id="result"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
